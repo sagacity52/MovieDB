@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+import hack.moviedb.data.Movie;
 import hack.moviedb.web.WebTalker;
 
 /**
@@ -20,8 +21,7 @@ public class Main {
 		
 		String input = scanner.nextLine();
 		String result = "";
-		
-		
+				
 		try
 		{
 			result = WebTalker.getHTML(input, "movie");
